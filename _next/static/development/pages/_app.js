@@ -5,11 +5,11 @@
   !*** ./constants/constants.js ***!
   \********************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 var AppConstants = {
-  baseUrl: 'https://raw.githubusercontent.com/shadowfalls/mirror/master/src',
-  isLocal: "development" === 'development',
+  baseUrl: 'https://raw.githubusercontent.com/shadowfalls/space_mirror/master/',
+  isLocal: undefined === 'development',
   localBaseUrl: 'http://localhost:3939',
 
   /* AdSense Ad Client ID for dinesh24murali.github.io */
@@ -42,11 +42,11 @@ var AppConstants = {
   recentArticles: '_recentArticlesJson',
   navLinks: [{
     name: 'Solar system',
-    id: '5eec3bb20fc5774a4f4baf69',
+    id: 'solar_system',
     label: 'Solar system'
   }],
   getArticleUrl: function getArticleUrl(id) {
-    return  true ? "/blogs/".concat(id) : undefined;
+    return undefined === 'development' ? "/blogs/".concat(id) : "/blog/".concat(id);
   }
 };
 module.exports = AppConstants;

@@ -13795,18 +13795,7 @@ function Blogs() {
       lineNumber: 137,
       columnNumber: 15
     }
-  }, __jsx(react_adsense__WEBPACK_IMPORTED_MODULE_7___default.a.Google, {
-    client: _constants_constants__WEBPACK_IMPORTED_MODULE_8__["adClientId"],
-    slot: "3072497734",
-    format: "auto",
-    responsive: "true",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138,
-      columnNumber: 17
-    }
-  })), __jsx("div", {
+  }), __jsx("div", {
     className: "col-12",
     __self: this,
     __source: {
@@ -13936,18 +13925,7 @@ function Blogs() {
       lineNumber: 183,
       columnNumber: 15
     }
-  }, __jsx(react_adsense__WEBPACK_IMPORTED_MODULE_7___default.a.Google, {
-    client: _constants_constants__WEBPACK_IMPORTED_MODULE_8__["adClientId"],
-    slot: "9591641415",
-    format: "auto",
-    responsive: "true",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 184,
-      columnNumber: 17
-    }
-  }))), __jsx("div", {
+  })), __jsx("div", {
     className: "recent",
     __self: this,
     __source: {

@@ -1,1 +1,32 @@
-if(!self.define){const e=e=>{"require"!==e&&(e+=".js");let i=Promise.resolve();return r[e]||(i=new Promise((async i=>{if("document"in self){const r=document.createElement("script");r.src=e,document.head.appendChild(r),r.onload=i}else importScripts(e),i()}))),i.then((()=>{if(!r[e])throw new Error(`Module ${e} didn’t register its module`);return r[e]}))},i=(i,r)=>{Promise.all(i.map(e)).then((e=>r(1===e.length?e[0]:e)))},r={require:Promise.resolve(i)};self.define=(i,s,t)=>{r[i]||(r[i]=Promise.resolve().then((()=>{let r={};const n={uri:location.origin+i.slice(1)};return Promise.all(s.map((i=>{switch(i){case"exports":return r;case"module":return n;default:return e(i)}}))).then((e=>{const i=t(...e);return r.default||(r.default=i),r}))})))}}define("./sw.js",["./workbox-22243acd"],(function(e){"use strict";self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"https://dinesh24murali.github.io618.c6dd20d2566c56443791.bundle.js",revision:null},{url:"https://dinesh24murali.github.io618.c6dd20d2566c56443791.bundle.js.LICENSE.txt",revision:"6bbb3a8e7360a6a98672414629b231d4"},{url:"https://dinesh24murali.github.io618.c6dd20d2566c56443791.css",revision:null},{url:"https://dinesh24murali.github.iomain.c6dd20d2566c56443791.bundle.js",revision:null},{url:"https://dinesh24murali.github.iomain.c6dd20d2566c56443791.css",revision:null}],{}),e.cleanupOutdatedCaches()}));
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+importScripts(
+  "precache-manifest.7a1627df8260e76481f34ef32439dbb0.js"
+);
+
+workbox.core.skipWaiting();
+
+workbox.core.clientsClaim();
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.precaching.cleanupOutdatedCaches();

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.codeknight.blog
+
+# Sitemaps
+Sitemap: https://www.codeknight.blog/sitemap.xml
